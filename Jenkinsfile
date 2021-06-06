@@ -8,6 +8,7 @@ pipeline {
 	        MINOR = '0'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
+		UIPATH_USERNAME = "suraj.gangineni@gmail.com"
 	        UIPATH_ORCH_LOGICAL_NAME = "surajgangineni"
 	        UIPATH_ORCH_TENANT_NAME = "surajgangineni"
 	        UIPATH_ORCH_FOLDER_NAME = "Default"
@@ -63,7 +64,7 @@ pipeline {
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'Test',
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                credentials: Token(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'APIUserKey'), 
+	                credentials: credentials(accountName: "${UIPATH_ORCH_LOGICAL_NAME}", credentialsId: 'suga'), 
 	
 
 	        )
