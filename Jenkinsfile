@@ -64,7 +64,7 @@ pipeline {
 	                folderName: "${UIPATH_ORCH_FOLDER_NAME}",
 	                environments: 'Test',
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
-	                withCredentials([string(credentialsId: 'suga', variable: 'credentialsVariable')]),
+	                withCredentials([string(credentialsId: 'suga')]),
 
 	        )
 	            }
