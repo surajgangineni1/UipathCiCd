@@ -66,7 +66,7 @@ pipeline {
 	                //credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: 'APIUserKey']
 	                withCredentials([string(credentialsId: 'suga')])
 
-	        )
+	        
 	            }
 	        }
 	
